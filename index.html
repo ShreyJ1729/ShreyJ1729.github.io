@@ -1,26 +1,99 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="js-focus-visible" data-js-focus-visible="">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shrey Joshi</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
+    <title>Shrey Joshi</title>
+    <meta name="description" content="Shrey Joshi's Homepage">
+    <meta name="author" content="Shrey Joshi">
+
+    <link href="style.css" rel="stylesheet">
+    <script src="index.js"></script>
 </head>
 
 <body>
-    <div id="app">
-        {{message}}
+    <header>
+        <a class="logo" href="index.html">Shrey Joshi</a>
+        <nav class="float-right">
+            <ul>
+                <li>
+                    <a href="#about"> about </a>/
+                    <a href="#research"> research </a>/
+                    <a href="#projects"> projects </a>/
+                    <a href="/resources/resume.pdf" target="_blank"> resume </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="row" id="about">
+            <img class="float-left" src="resources/me.jpg" style="height:170px; border-radius: 50%;">
+            <p> who am i
+            </p>
+        </div>
+
+        <hr>
+        <div class="row">
+            <h3>News:</h3>
+            <u>March 2021:</u><br>
+            <ul>
+                <li>Website finished</li>
+            </ul>
+            <hr>
+            <h2><u>Research</u></h2>
+            <div class="row">
+                <h3>AI-Driven Landslide Risk Assessment using Geophysical and Metereological Data</h3>
+
+                <div class="col-7">
+                    <p><b>Shrey Joshi</b>*, Ishaan Javali*, Ellen Rathje<br>
+
+                        <a href="https://github.com/Landslide-Analytics-System" target="_blank">Github</a> /
+                        <a href="resources/glas/poster.pdf" target="_blank">Poster</a> /
+                        <!-- <a href="resources/glas/susmap.png" target="_blank"></a>Susceptibilty Map (Full-Res: 9500x3000)</a> -->
+                    </p>
+
+                    <p>
+                        We introduce GLAS: a scalable, low-latency, Global Landslide Analytics System, along with the
+                        first publicly available dataset of Global Landslide Incidents and Features (GLIF). GLIF
+                        consists of <a
+                            href="https://developers.google.com/earth-engine/datasets/catalog/USGS_SRTMGL1_003"
+                            target="_blank">elevation</a>, <a href="https://weatherstack.com/"
+                            target="_blank">climate</a>, <a href="https://csdms.colorado.edu/wiki/Data:GLiM"
+                            target="_blank">lithology</a>, <a
+                            href="https://developers.google.com/earth-engine/datasets/catalog/UMD_hansen_global_forest_change_2020_v1_8"
+                            target="_blank">forest change</a>, and <a
+                            href="https://wiki.osmfoundation.org/wiki/Main_Page/" target="_blank">human
+                            infrastructure</a> data for tens
+                        of thousands of landslide and non-landslide locations/times around the world. GLAS consists of
+                        Random Forest (RF) models trained on GLIF for three tasks: landslide forecasting (binary),
+                        landslide severity assessment (categorical), and landslide date estimatation (categorical). A
+                        new data-driven <a href="resources/glas/susmap.png" target="_blank">susceptibility mapping</a>
+                        approach was also developed using a weighted sum of static
+                        features and RF feature importances. Lastly, we demonstrate that historical multispectral
+                        LANDSAT-8 satellite data can be used to detect sudden changes in bare-earth exposure (Red Band:
+                        655nm) and soil moisture (SWIR: Bands 5 & 7) in order to detect unreported rainfall-induced
+                        landslides, which could serve as additional training data by adding to GLIF's repository of
+                        landslide instances.
+                    </p>
+
+                </div>
+                <div class="col-5">
+                    <img src="resources/glas/thumbnail.png" style="width: 100%">
+                </div>
+            </div>
+
+            <hr>
+
+            <footer>
+                © Shrey Joshi
+                <div class="float-right">Template modified from <a href="https://kristinamonakhova.com">Kristina Monakhova
+                    </a></div>
+            </footer>
+        </div>
+
+
     </div>
-</body>
-
-<!-- Vue.js dev version -->
-<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
-
-<!-- Vue.js production version -->
-<!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script> -->
-
-<script src="index.js"></script>
 
 </html>
