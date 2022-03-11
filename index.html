@@ -8,54 +8,65 @@
     <meta name="description" content="Shrey Joshi's Homepage">
     <meta name="author" content="Shrey Joshi">
 
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
 
-    <link href="style.css" rel="stylesheet">
-
+    <link href="style2.css" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <header>
-        <a class="logo" href="index.html">Shrey Joshi</a>
-        <nav class="float-right">
-            <ul>
-                <li>
-                    <a href="#about"> about </a>/
-                    <a href="#research"> research </a>/
-                    <a href="#projects"> projects </a>/
-                    <a> blog </a>/
-                    <a href="resources/resume.pdf" target="_blank"> resume </a>
-                </li>
+    <nav id="navbar" class="navbar navbar-fixed-top navbar-expand-lg sticky-top mb-4">
+        <a class="navbar-brand text-white" href="#">Shrey Joshi</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="fa fa-bars text-white"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#about">about</a></li>
+                <li class="text-white d-lg-inline d-none"><a class="nav-link">/</a></li>
+
+                <li class="nav-item"><a class="nav-link" href="#research">research</a></li>
+                <li class="text-white d-lg-inline d-none"><a class="nav-link">/</a></li>
+
+                <li class="nav-item"><a class="nav-link" href="#projects">projects</a></li>
+                <li class="text-white d-lg-inline d-none"><a class="nav-link">/</a></li>
+
+                <li class="nav-item"><a class="nav-link" href="#blog">blog</a></li>
+                <li class="text-white d-lg-inline d-none"><a class="nav-link">/</a></li>
+
+                <li class="nav-item"><a class="nav-link" href="resources/resume.pdf">resume</a></li>
             </ul>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
     <div class="container">
         <div class="row">
-            <div class="col-3">
-                <img class="center" src="resources/headshot.jpg" style="width: 100%; border-radius: 50%;">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <img class="center img-fluid" src="resources/headshot.jpg" style="border-radius: 50%;">
                 <div class="icons">
-                    <a href="https://github.com/ShreyJ1729" target="_blank"><i class="fa fa-github"></i></a>
-                    <a href="https://www.instagram.com/shreyj1729/" target="_blank"><i class="fa fa-instagram"></i></a>
-                    <a href="https://www.facebook.com/shreyj1729/" target="_blank"><i class="fa fa-facebook"></i></a>
-                    <a href="https://www.linkedin.com/in/sjoshi1729/" target="_blank"><i class="fa fa-linkedin"></i></a>
-                    <br>contact me at shreyjoshi2004@gmail.com
+                    <a href="https://github.com/ShreyJ1729"><i class="fa fa-github"></i></a>
+                    <a href="https://www.instagram.com/shreyj1729/"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/shreyj1729/"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/sjoshi1729/"><i class="fa fa-linkedin"></i></a>
                 </div>
             </div>
-            <div class="col-9" id="about">
+            <div class="col-lg-9 col-md-6 col-sm-12" id="about">
                 <h2><u>About</u></h2>
-                <p>Hey! I'm Shrey, a senior at Plano East Senior High School, and incoming undergrad at ___ studying
-                    ___.</p>
-                <p>Over the years, I've worked on <a href="https://github.com/Grassroots-Democrats-HQ">software</a> to
-                    automate political activism at the <a href="https://grassrootsdems.org/">Grassroots Democrats HQ</a>, computational geoscience research, and 
+                <p>Hey! I'm Shrey, a senior at Plano East Senior High and incoming undergrad at ? studying
+                    ?.</p>
+                <p>
+                    Over the years, I've built <a href="https://github.com/Grassroots-Democrats-HQ">software</a> to
+                    automate political activism at the <a href="https://grassrootsdems.org/">Grassroots Democrats
+                        HQ</a>, conducted <a href="#glas">computational geoscience research</a>, and done lots of <a
+                        href="https://devpost.com/ShreyJ1729">hackathons</a>. I've also worked on historical research
+                     on topics such as <a href="https://site.nhd.org/59475574/home">Operation Condor</a>.
                 </p>
+
+                <p>If you're working on something cool and need a collaborator, don't hesitate to reach out to me at <a
+                        href="mailto:shreyjoshi2004@gmail.com">shreyjoshi2004@gmail.com</a>.</p>
             </div>
         </div>
 
@@ -63,18 +74,9 @@
 
         <div class="row" style="font-size: 1em">
             <div class="col-6">
-                <h3>News:</h3>
-                <ul>March 2021:</ul>
-                <p style="margin-left: 40px">
-                    Website completed<br>
-                    Beginning summer internship search
-                </p>
-            </div>
-            <div class="col-6">
-                <h3>Work Experience:</h3>
-                <ul>
-                    <li>Grassroots Democrats HQ, </li>
-                </ul>
+                <h3 class="mx-0">News:</h3>
+                March 2021:
+                <p class="ml-5">Website construction started</p>
             </div>
         </div>
 
@@ -82,50 +84,51 @@
 
         <div class="row" id="research">
             <h2><u>Research</u></h2>
-            <h3>AI-Driven Landslide Risk Assessment using Geophysical and Metereological Data</h3>
-            <img class="float-right" src="resources/glas/thumbnail.png" style="width: 450px; border: 3px solid black;">
-
-            <!-- <div class="col-7" style="font-size: 16px"> -->
-            <p>
-                <b>Shrey Joshi</b>*, Ishaan Javali*, Dr. Ellen Rathje<br>
-                <em>2021 Regeneron ISEF Best-of-Category (EAEV), $10,000 won, Accepted to 2021 MIT URTC</em>
-            </p>
-            <p>
-            <div class="link" id="github"><a href="https://github.com/Landslide-Analytics-System"
-                    target="_blank">Code</a></div> /
-            <div class="link" id="presentation"><a href="resources/glas/poster.pdf" target="_blank">Poster</a></div>
-            /
-            <div class="link" id="publication"><a href="https://doi.org/10.1109/URTC54388.2021.9701628"
-                    target="_blank">IEEE Xplore</a></div> /
-            <div class="link" id="paper"><a href target="_blank">Paper (coming soon)</a></div>
-            </p>
-            <!-- <div class="link" id="extra"><a href="resources/glas/susmap.png" target="_blank">Susceptibility Map (Full-Res)</a></div> -->
-            <!-- </div> -->
-            <!-- <div class="col-5"> -->
-            <!-- </div> -->
-            <!-- <div class=""> -->
-            <p>
-                We introduce GLAS: a scalable, low-latency, Global Landslide Analytics System, along with the
-                first publicly available dataset of Global Landslide Incidents and Features (GLIF). GLIF
-                consists of <a href="https://developers.google.com/earth-engine/datasets/catalog/USGS_SRTMGL1_003"
-                    target="_blank">elevation</a>, <a href="https://weatherstack.com/" target="_blank">climate</a>,
-                <a href="https://csdms.colorado.edu/wiki/Data:GLiM" target="_blank">lithology</a>, <a
-                    href="https://developers.google.com/earth-engine/datasets/catalog/UMD_hansen_global_forest_change_2020_v1_8"
-                    target="_blank">forest change</a>, and <a href="https://wiki.osmfoundation.org/wiki/Main_Page/"
-                    target="_blank">human
-                    infrastructure</a> data for tens
-                of thousands of landslide and non-landslide locations/times around the world. GLAS consists of
-                Random Forest (RF) models trained on GLIF for three tasks: landslide forecasting (binary),
-                landslide severity assessment (categorical), and landslide date estimatation (categorical). A
-                new data-driven <a href="resources/glas/susmap.png" target="_blank">susceptibility mapping</a>
-                approach was also developed using a weighted sum of static
-                features and RF feature importances. Lastly, we demonstrate that historical multispectral
-                LANDSAT-8 satellite data can be used to detect sudden changes in bare-earth exposure (Red Band:
-                655nm) and soil moisture (SWIR: Bands 5 & 7) in order to detect unreported rainfall-induced
-                landslides, which could serve as additional training data by adding to GLIF's repository of
-                landslide instances.
-            </p>
-            <!-- </div> -->
+            <div class="row" id="glas">
+                <div class="col-12">
+                    <h4><b>AI-Driven Landslide Risk Assessment using Geophysical and Metereological Data</b></h4>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <p>
+                        <b>Shrey Joshi</b>*, Ishaan Javali*, Dr. Ellen Rathje<br>
+                        <em>2021 ISEF Best-of-Category (EAEV), $10,000 won, Accepted to 2021 MIT URTC</em>
+                    </p>
+                    <p>
+                    <div class="link" id="github"><a href="https://github.com/Landslide-Analytics-System">Code</a></div>
+                    /
+                    <div class="link" id="presentation"><a href="resources/glas/poster.pdf">Poster</a></div> /
+                    <div class="link" id="publication"><a href="https://doi.org/10.1109/URTC54388.2021.9701628">IEEE
+                            Xplore</a></div> /
+                    <div class="link" id="paper"><a href>Paper (coming soon)</a></div>
+                    </p>
+                    <p>
+                        We introduce GLAS: a scalable, low-latency, Global Landslide Analytics System, along with the
+                        first publicly available dataset of Global Landslide Incidents and Features (GLIF). GLIF
+                        consists of <a
+                            href="https://developers.google.com/earth-engine/datasets/catalog/USGS_SRTMGL1_003">elevation</a>,
+                        <a href="https://weatherstack.com/">climate</a>,
+                        <a href="https://csdms.colorado.edu/wiki/Data:GLiM">lithology</a>, <a
+                            href="https://developers.google.com/earth-engine/datasets/catalog/UMD_hansen_global_forest_change_2020_v1_8">forest
+                            change</a>, and <a href="https://wiki.osmfoundation.org/wiki/Main_Page/">human
+                            infrastructure</a> data for tens
+                        of thousands of landslide and non-landslide locations/times around the world. GLAS consists of
+                        Random Forest (RF) models trained on GLIF for three tasks: landslide forecasting (binary),
+                        landslide severity assessment (categorical), and landslide date estimatation (categorical). A
+                        new data-driven <a href="resources/glas/susmap.png">susceptibility mapping</a>
+                        approach was also developed using a weighted sum of static
+                        features and RF feature importances. Lastly, we demonstrate that historical multispectral
+                        LANDSAT-8 satellite data can be used to detect sudden changes in bare-earth exposure (Red Band:
+                        655nm) and soil moisture (SWIR: Bands 5 & 7) in order to detect unreported rainfall-induced
+                        landslides, which could serve as additional training data by adding to GLIF's repository of
+                        landslide instances.
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-12 d-flex align-items-center justify-content-center">
+                    <a href="resources/glas/poster.pdf">
+                        <img id="glas-thumbnail" class="w-100" src="resources/glas/thumbnail.png" style="border: 3px solid black;">
+                    </a>
+                </div>
+            </div>
 
         </div>
 
@@ -141,18 +144,18 @@
             <div class="col-6">
                 <h3>Check out some people I admire:</h3>
                 <ul>
-                    <li><a href="https://www.linkedin.com/in/mallickprat" target="_blank">Pratyush Mallick</a></li>
-                    <li><a href="https://www.linkedin.com/in/parisa-vaziri-10578420a" target="_blank">Parisa Vaziri</a>
+                    <li><a href="https://www.linkedin.com/in/mallickprat">Pratyush Mallick</a></li>
+                    <li><a href="https://www.linkedin.com/in/parisa-vaziri-10578420a">Parisa Vaziri</a>
                     </li>
-                    <li><a href="https://www.linkedin.com/in/rhojohn" target="_blank">John Rho</a></li>
-                    <li><a href="https://mengk.me/" target="_blank">Kevin Meng</a></li>
-                    <li><a href="https://www.linkedin.com/in/alayrshah" target="_blank">Alay Shah</a></li>
+                    <li><a href="https://www.linkedin.com/in/rhojohn">John Rho</a></li>
+                    <li><a href="https://mengk.me/">Kevin Meng</a></li>
+                    <li><a href="https://www.linkedin.com/in/alayrshah">Alay Shah</a></li>
                 </ul>
             </div>
             <div class="col-6">
-                <h3>Stats:</h3>
+                <h3>Miscellaneous:</h3>
                 <ul>
-                    <li id="age">Age: 17</li>
+                    <li id="age">Current Age: 17</li>
                 </ul>
             </div>
         </div>
@@ -167,5 +170,12 @@
 
     </div>
     <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 
 </html>

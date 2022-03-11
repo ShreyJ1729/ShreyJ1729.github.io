@@ -63,28 +63,21 @@ html{scroll-behavior:smooth}
     src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
   }
-    
+  
   /* Layout */
-  body { background-color: #fff; color: #000;	font: 16px/20px "Lato", "HelveticaNeue", Helvetica, Arial, sans-serif; }
-  
-  header { background-color: #000030; width: 100%; margin: 0 auto; position: relative; padding: 20px 0; border-bottom: 1px solid #ddd; margin-bottom: 10px;
-  margin-top: 0px; }
-  .logo { font-size: 28px; color: #fff; margin-left: 20px; text-decoration: none}
-  .logo:hover { color: #fff; text-decoration: none; }
+  body { background-color: #fff; color: #000;	font: 16px/20px "Lato", "HelveticaNeue", Helvetica, Arial, sans-serif; text-align: justify;}
  
+  nav {background-color: #000030;}
   
-  nav {margin-bottom: 50px}
-  nav ul { margin: 0; }
-  nav ul li { display: inline; margin-right: 20px; font-size: 20px; line-height: 28px; color: #fff; }
-  nav ul li a { color: #fff; }
-  nav ul li a:hover { color: #fff;}
-
+  .nav-link { font-size: 18px; color: #fff; text-decoration: none; margin: 0px; padding: 10px 0px}
+  .nav-link:hover, .nav-link:focus .nav-link:active{ color: #fff; text-decoration: underline; }
+  .nav-item { margin: 0px; padding: 0px; color: white}
 
   .icons { text-align: center; margin-top: 20px}
 
   .fa {
-    padding: 7px 5px;
-    font-size: 16px !important;
+    padding: 5px 5px;
+    font-size: 18px !important;
     width: 30px;
     text-align: center;
     text-decoration: none;
@@ -115,6 +108,10 @@ html{scroll-behavior:smooth}
     color: white;
   }
 
+  .fa-envelope {
+    background: black;
+    color: white;
+  }
   
 
   .link {display: inline; font-size: 16px; border-radius: 5px; padding: 2px 4px}
@@ -126,46 +123,25 @@ html{scroll-behavior:smooth}
   #paper {background-color: #800080;}
   #publication {background-color: #006060;}
   #extra {background-color: #008000;}
-  
 
-  .container { position: relative; text-align: left; max-width: 80%; margin: 0 auto; }
+  #glas-thumbnail:hover {filter: brightness(75%);}
 
   footer { border-top:1px solid #ccc; font-size:11px; line-height:26px; color:#999; }
   footer a { color:#999999; }
-  footer a:hover { color:#105CB6; }
+  footer a:hover { color:#206CC6; }
   footer ul li { display:inline; list-style:none; padding-left:20px; }
   
-  /* Grid */
-  .row { width: 100%; margin:0 auto 20px auto; display:inline-block; position:relative; }
-  .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 { float: left; margin-right: 2%; }
-  .row .col-1:last-child, .row .col-2:last-child, .row .col-3:last-child, .row .col-4:last-child, .row .col-5:last-child, .row .col-6:last-child, .row .col-7:last-child, .row .col-8:last-child, .row .col-9:last-child, .row .col-10:last-child, .row .col-11:last-child, .row .col-12:last-child { margin-right: 0; }
-  .row:after, .clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
-  
-  .col-1  { width: 6%; }
-  .col-2  { width: 15%; }
-  .col-3  { width: 23.5%; }
-  .col-4  { width: 32%; }
-  .col-5  { width: 40%; }
-  .col-6  { width: 49%; }
-  .col-7  { width: 56.5%; }
-  .col-8  { width: 66%; }
-  .col-9  { width: 74%; }
-  .col-10 { width: 82.5%; }
-  .col-11 { width: 91%; }
-  .col-12 { width: 100%;  }
-  
   /* Typography */
-  a { color: #105CB6; text-decoration: none; }
-  a:hover, a:focus { color: #105CB6; text-decoration: underline; }
-  a:active { color: #105CB6; }
+  a { color: #206CC6; text-decoration: none; }
+  a:hover, a:focus { color: #206CC6; text-decoration: underline; }
+  a:active { color: #206CC6; }
   
-  h1 { font-size: 32px; line-height: 40px; margin-bottom: 20px; font-weight: bold; }
-  h2 { font-size: 26px; line-height: 26px; margin-bottom: 20px; font-weight: bold; }
-  h3 { font-size: 22px; line-height: 26px; margin-bottom: 10px; font-weight: bold; }
-  h4 { font-size: 18px; line-height: 26px; margin-bottom: 10px; }
-  h5 { font-size: 16px; line-height: 26px; margin-bottom: 0px; }
-  h6 { font-size: 14px; line-height: 26px; margin-bottom: 0px; }
-  h1,h2,h3,h4,h5,h6 { color: #000; }
+  h1 { font-size: 32px;}
+  h2 { font-size: 26px;}
+  h3 { font-size: 22px;}
+  h4 { font-size: 18px;}
+  h5 { font-size: 16px;}
+  h6 { font-size: 14px;}
   
   p { margin-bottom: 20px; font-size: 16px }
   
@@ -182,47 +158,8 @@ html{scroll-behavior:smooth}
   
   /* Misc */
   hr { background-color: #ccc; border: 0px; color: #ccc; height: 1px; margin-bottom: 20px; }
-  
-  pre, code { background-color: #eee; display:block; padding:10px; }
-  
-  pre {
-      margin-bottom: 20px;
-   white-space: pre-wrap;       /* css-3 */
-   white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
-   white-space: -pre-wrap;      /* Opera 4-6 */
-   white-space: -o-pre-wrap;    /* Opera 7 */
-   word-wrap: break-word;       /* Internet Explorer 5.5+ */
-  }
-  
-  blockquote { margin: 10px 10px 20px; padding: 9px; background-color: #f8f8f8; color: #666; border-left: 5px solid #ddd; font: 14px/20px Georgia, Times, serif; quotes: "\201C" "\201D"; }
-  blockquote p { margin: 0; }
-  blockquote:before { content: open-quote; font-weight: bold; }
-  blockquote:after  { content: close-quote; font-weight: bold; }
-  
+    
   /* List */
   ul { font-size: 16px; margin-bottom: 20px; list-style-position:inside; }
   ol { margin-bottom: 20px; list-style-position:inside; }
   ul ul, ol ol { margin-bottom:0; }
-  
-  /* Form */
-  fieldset { position: relative; border-top:1px solid #ccc; padding: 10px; margin-bottom:20px; }
-  fieldset legend { font-weight:bold; font-size:17px; padding: 0 5px; }
-  
-  /* Table */
-  table { margin-bottom: 20px; width:100%; }
-  th { font-weight: bold; }
-  td { text-align: left; }
-  tfoot { font-style: italic; }
-
-tab1 { padding-left: 4em; }
-tab2 { padding-left: 1em; }
-
-  /* Print */
-  @media print {
-      * {
-          text-shadow: none !important;
-          background: transparent !important;
-          box-shadow: none !important;
-          color: #000 !important;
-      }
-    }
