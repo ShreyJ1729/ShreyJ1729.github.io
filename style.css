@@ -65,9 +65,9 @@ html{scroll-behavior:smooth}
   }
   
   /* Layout */
-  body { background-color: #fff; color: #000;	font: 16px/20px "Lato", "HelveticaNeue", Helvetica, Arial, sans-serif; text-align: justify;}
+  body { background-color: #fff; color: #000;	font: 16px "Lato", "HelveticaNeue", Helvetica, Arial, sans-serif; text-align: justify; padding: 0px;}
  
-  nav {background-color: #000030;}
+  #navbar {background-color: #000030; margin: 0px}
   
   .nav-link { font-size: 18px; color: #fff; text-decoration: none; margin: 0px; padding: 10px 0px}
   .nav-link:hover, .nav-link:focus .nav-link:active{ color: #fff; text-decoration: underline; }
@@ -114,7 +114,7 @@ html{scroll-behavior:smooth}
   }
   
 
-  .link {display: inline; font-size: 16px; border-radius: 5px; padding: 2px 4px}
+  .link {display: inline; font-size: 16px; border-radius: 5px; padding: 2px 4px; line-height: 25px; white-space: nowrap; }
   .link a {color: #fff; margin: auto}
   .link a:hover, .link a:focus, .link a:active {color: #fff; text-decoration: underline; }
 
@@ -142,24 +142,7 @@ html{scroll-behavior:smooth}
   h4 { font-size: 18px;}
   h5 { font-size: 16px;}
   h6 { font-size: 14px;}
-  
-  p { margin-bottom: 20px; font-size: 16px }
-  
-  .float-left     { float: left; }
-  .float-right    { float: right; }
-  img.float-left  { float: left; margin: 0 20px 20px 0; }
-  img.float-right { float: right; margin: 0 0 20px 20px; }
-  img.center 		{ margin: 0 auto; display: block; }
-  
-  .text-left 	  { text-align: left; }
-  .text-center  { text-align: center; }
-  .text-right   { text-align: right; }
-  .text-justify { text-align: justify; }
-  
-  /* Misc */
-  hr { background-color: #ccc; border: 0px; color: #ccc; height: 1px; margin-bottom: 20px; }
     
-  /* List */
-  ul { font-size: 16px; margin-bottom: 20px; list-style-position:inside; }
-  ol { margin-bottom: 20px; list-style-position:inside; }
-  ul ul, ol ol { margin-bottom:0; }
+  hr { background-color: #ccc; border: 0px; color: #ccc; height: 1px; margin-bottom: 20px; }
+
+  .container-fluid { width: 80%; }
