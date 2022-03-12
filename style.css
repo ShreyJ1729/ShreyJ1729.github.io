@@ -1,4 +1,7 @@
-html{scroll-behavior:smooth}
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 60px;
+}
 
 @font-face {
     font-family: 'Lato';
@@ -67,7 +70,7 @@ html{scroll-behavior:smooth}
   /* Layout */
   body { background-color: #fff; color: #000;	font: 16px "Lato", "HelveticaNeue", Helvetica, Arial, sans-serif; text-align: justify; padding: 0px;}
  
-  #navbar {background-color: #000030; margin: 0px}
+  #navbar {background-color: #000030; margin: 0px; height: 60px; width: 100%;}
   
   .nav-link { font-size: 18px; color: #fff; text-decoration: none; margin: 0px; padding: 10px 0px}
   .nav-link:hover, .nav-link:focus .nav-link:active{ color: #fff; text-decoration: underline; }
