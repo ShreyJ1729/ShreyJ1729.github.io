@@ -4,7 +4,7 @@ from datetime import datetime
 with open('index.html', 'r') as file:
   filedata = file.read()
 
-date = datetime.now().strftime("%B %d, %Y")
+date = datetime.now().strftime("%B %Y")
 
 # Replace the target string
 filedata = filedata.replace('<li>Website last updated: </li>', '<li>Website last updated: ' + date + '</li>')
