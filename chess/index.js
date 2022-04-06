@@ -62,14 +62,23 @@ class ChessGame {
 
     console.log("OnDrop:", source, target, piece, newPos, oldPos, orientation);
 
+    // if hvc, computer plays a move next. if hvh, check for endgame before flipping board for next person to move
     if (this.gameMode == "hvc") {
       this.timeoutID = setTimeout(this.computerMove.bind(this), 100);
+    }
+    else if (this.gameMode == "hvh") {
+      if (this.checkGameOver().over) {
+        this.endGame();
+        return;
+      }
+      setTimeout(this.board.flip, 250);
     }
   }
 
   computerMove() {
+    // check for endgame conditions before moving
     if (this.checkGameOver().over) {
-      console.log(this.checkGameOver());
+      this.endGame();
       return;
     }
 
@@ -85,11 +94,28 @@ class ChessGame {
 
     if (this.gameMode == "cvc") {
       this.timeoutID = setTimeout(this.computerMove.bind(this), 100);
+    } else {
+      // check for endgame conditions before human tries to move
+      if (this.checkGameOver().over) {
+        this.endGame();
+        return;
+      }
     }
   }
 
   getRandomMove(moves) {
     return moves[Math.floor(Math.random() * moves.length)];
+  }
+
+  endGame() {
+    let data = this.checkGameOver();
+    console.log(data);
+
+    if (data.checkmate) {
+      $("#gameStatus").text(this.game.turn() + " was checkmated");
+    } else if (data.draw) {
+      $("#gameStatus").text("draw\n" + JSON.stringify(data));
+    }
   }
 
   reset() {
@@ -139,6 +165,7 @@ $("#blackPlayer").on("change", () => {
 
 $("#resetButton").on("click", () => {
   chessGame.reset();
+  $("#gameStatus").text("");
 });
 $("#startButton").on("click", () => {
   chessGame.run();
