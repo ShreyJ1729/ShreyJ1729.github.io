@@ -18,23 +18,12 @@
                 <div class="mx-auto" id="board" style="width: 90%"></div>
             </div>
             <div class="col-6">
-                <button class="btn" id="startButton">Start</button>
-                <button class="btn" id="resetButton">Reset</button>
+                <button class="btn" id="resetButton">Reset Board</button>
                 <br/>
                 <br/>
-                White Player:
-                <select id="whitePlayer">
-                    <option selected="selected" value="h">Human</option>
-                    <option value="c">Computer</option>
-                </select>
-                <br/>
-                Black Player:
-                <select id="blackPlayer">
-                    <option value="h">Human</option>
-                    <option selected="selected" value="c">Computer</option>
-                </select>
                 <br/><br/>
-                <p>Currently all computer moves are random. Todo implement minimax algorithm + alpha-beta pruning</p>
+                <p>The computer uses the minimax algorithm with a simple piece-count based evaluation function.
+                    Todo implement alpha-beta pruning for speed</p>
                 <p id="gameStatus"></p>
             </div>
         </div>
