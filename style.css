@@ -1,6 +1,6 @@
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 60px;
+  scroll-padding-top: 20px;
 }
 
 @font-face {
@@ -98,7 +98,7 @@ html {
 body {
   background-color: #fff;
   color: #000;
-  font: 16px "Lato", "HelveticaNeue", Helvetica, Arial, sans-serif;
+  font: 16px "Lato", "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
   text-align: justify;
   padding: 0px;
 }
