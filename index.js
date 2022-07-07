@@ -20,6 +20,6 @@ const OpenLinksInNewTab = () => {
 };
 
 OpenLinksInNewTab();
-// requestAnimationFrame(updateAge);
+requestAnimationFrame(updateAge);
 
 document.getElementById("website-last-updated").innerHTML = "Website last updated: <b>" + document.lastModified + "</b>";
