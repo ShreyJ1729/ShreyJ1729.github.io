@@ -290,7 +290,7 @@ hr {
 }
 
 .container-fluid {
-  width: 80%;
+  width: 90%;
 }
 
 
@@ -361,4 +361,5 @@ hr {
   bottom: 0;
   font-size: 12px;
   font-weight: 500;
+  text-align: left;
 }

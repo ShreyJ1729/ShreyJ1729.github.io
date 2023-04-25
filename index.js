@@ -22,4 +22,7 @@ const OpenLinksInNewTab = () => {
 OpenLinksInNewTab();
 requestAnimationFrame(updateAge);
 
-document.getElementById("website-last-updated").innerHTML = "Website last updated: <b>" + document.lastModified + "</b>";
+document.getElementById("website-last-updated").innerHTML =
+  "Website last updated: <b>" + document.lastModified + "</b>";
+
+document.getElementById("year").innerHTML = new Date().getFullYear();
