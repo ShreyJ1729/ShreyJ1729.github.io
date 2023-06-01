@@ -19,10 +19,25 @@ const OpenLinksInNewTab = () => {
   }
 };
 
+const getNumberOfProjects = () => {
+  const projects = document.getElementsByClassName("project-list")[0];
+  const num_projects = projects.childElementCount;
+  return num_projects;
+};
+
 OpenLinksInNewTab();
 requestAnimationFrame(updateAge);
+console.log("Website last updated: " + document.lastModified);
+console.log("Number of projects: " + getNumberOfProjects());
 
 document.getElementById("website-last-updated").innerHTML =
   "Website last updated: <b>" + document.lastModified + "</b>";
 
 document.getElementById("year").innerHTML = new Date().getFullYear();
+
+document.getElementById(
+  "projects"
+).firstElementChild.firstElementChild.innerHTML =
+  "<u>Projects</u> <span style='font-size: 22px'>(" +
+  getNumberOfProjects() +
+  ")</span>";
