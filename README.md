@@ -9,3 +9,4 @@ todo
 - [ ] add reading list
 - [ ] connect substack or blog
 - [ ] projects filter system once I cross 25 projects
+- [ ] dark mode
