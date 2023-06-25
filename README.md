@@ -5,8 +5,7 @@ https://shreyjoshi.com/
 todo
 
 - [ ] make gifs for each project, then run on hover
-- [ ] migrate to react w chakra UI
-- [ ] add reading list
-- [ ] connect substack or blog
-- [ ] projects filter system once I cross 25 projects
-- [ ] dark mode
+- [ ] migrate to react w chakra UI or shameless steal someone's website template
+- [ ] add reading list with books read/reading
+- [ ] connect substack or blog (after I write a few posts)
+- [ ] dark mode toggle
