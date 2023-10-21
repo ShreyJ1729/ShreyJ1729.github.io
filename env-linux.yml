@@ -91,7 +91,7 @@ dependencies:
   - numpy=1.18.1
   - numpy-base=1.18.1
   - olefile=0.46
-  - opencv=4.1.0
+  - opencv-python
   - openh264=1.8.0
   - openssl=1.1.1d
   - packaging=20.1
