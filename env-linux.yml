@@ -157,4 +157,3 @@ dependencies:
       - torchvision==0.5.0
       - dlib
       - imutils==0.5.3
-      - opencv-python
