@@ -2,6 +2,7 @@ name: ge-linux
 channels:
   - pytorch
   - conda-forge
+  - opencv
   - defaults
 dependencies:
   - _libgcc_mutex=0.1
@@ -91,7 +92,7 @@ dependencies:
   - numpy=1.18.1
   - numpy-base=1.18.1
   - olefile=0.46
-  - opencv-python
+  - opencv=4.1.0
   - openh264=1.8.0
   - openssl=1.1.1d
   - packaging=20.1
@@ -157,3 +158,4 @@ dependencies:
       - torchvision==0.5.0
       - dlib==19.19.0
       - imutils==0.5.3
+      - opencv-python
