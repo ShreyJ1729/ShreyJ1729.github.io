@@ -3,7 +3,6 @@ name: ge-linux
 channels:
   - pytorch
   - conda-forge
-  - opencv
   - defaults
 dependencies:
   - _libgcc_mutex=0.1
