@@ -1,3 +1,4 @@
+yml_file = """
 name: ge-linux
 channels:
   - pytorch
@@ -159,3 +160,4 @@ dependencies:
       - dlib==19.19.0
       - imutils==0.5.3
       - opencv-python
+"""
